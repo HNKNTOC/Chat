@@ -8,6 +8,7 @@ import com.company.client.gui.Chat;
 public class ChatTest {
     public static void main(String[] args) {
         Chat chat = new Chat();
+
         chat.start();
     }
 }

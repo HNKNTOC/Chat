@@ -1,22 +1,25 @@
 package com.company;
 
-import com.company.client.gui.Log;
+import com.company.client.gui.elementsChat.JMessegeList;
+import com.company.client.gui.elementsChat.Message;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import javax.swing.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        Log log = new Log();
-        log.start();
+        JFrame frame = new JFrame();
 
-        log.setListnerConnect(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.out.println("Name: "+log.getUserName());
-                System.out.println("Password: "+log.getUserPassword());
-            }
-        });
+        JMessegeList messegeList = new JMessegeList();
+
+        frame.add(messegeList);
+
+        messegeList.addMessage(new Message());
+        messegeList.addMessage(new Message());
+        messegeList.addMessage(new Message());
+
+        frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        frame.setSize(300, 300);
+        frame.setVisible(true);
     }
 }
