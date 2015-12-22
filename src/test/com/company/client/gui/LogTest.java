@@ -1,6 +1,6 @@
 package test.com.company.client.gui;
 
-import com.company.client.gui.Log;
+import com.company.client.gui.FrameLog;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,14 +10,14 @@ import java.awt.event.ActionListener;
  */
 public class LogTest {
     public static void main(String[] args) {
-        Log log = new Log();
+        FrameLog log = new FrameLog();
         log.start();
 
-        log.setListnerConnect(new ActionListener() {
+        log.addListenerConnect(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("Name: "+log.getUserName());
-                System.out.println("Password: "+log.getUserPassword());
+                System.out.println("Name: " + log.getUserName());
+                System.out.println("Password: " + log.getUserPassword());
             }
         });
     }

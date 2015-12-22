@@ -7,14 +7,14 @@ import java.awt.event.ActionListener;
 /**
  * Created by HNKNTOC on 19.12.2015.
  */
-public class Log extends JFrame {
+public class FrameLog extends JFrame {
 
     private JTextField fieldUserName = new JTextField();
     private JPasswordField fieldUserPassword = new JPasswordField();
     private JButton buttonConnect = new JButton("Connect");
 
-    public Log() throws HeadlessException {
-        super("Log :)");
+    public FrameLog() throws HeadlessException {
+        super("FrameLog :)");
     }
 
     public void start(){
@@ -75,7 +75,7 @@ public class Log extends JFrame {
 
     }
 
-    public void setListnerConnect(ActionListener listener){
+    public void addListenerConnect(ActionListener listener){
         buttonConnect.addActionListener(listener);
     }
 

@@ -2,15 +2,11 @@ package com.company.client.gui.elementsChat;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
 
 /**
  * Created by HNKNTOC on 20.12.2015.
  */
-public class JMessegeList extends JPanel implements MessageList {
-
-    private ArrayList<Message> listMessage = new ArrayList<>();
-    private JPanel panelMain = new JPanel();
+public class JMessegeList extends JPanel implements MessageDisplay {
 
     public JMessegeList() {
         go();
@@ -22,12 +18,18 @@ public class JMessegeList extends JPanel implements MessageList {
 
 
     @Override
-    public void addMessage(Message message) {
+    public void addMessage(JMessage message) {
         add(message);
+        updateUI();
     }
 
     @Override
-    public void removeMessage(Message message) {
+    public void removeMessage(JMessage message) {
         remove(message);
+    }
+
+    @Override
+    public JPanel getJPanel() {
+        return this;
     }
 }

@@ -1,7 +1,7 @@
 package com.company;
 
+import com.company.client.gui.elementsChat.JMessage;
 import com.company.client.gui.elementsChat.JMessegeList;
-import com.company.client.gui.elementsChat.Message;
 
 import javax.swing.*;
 
@@ -14,9 +14,9 @@ public class Main {
 
         frame.add(messegeList);
 
-        messegeList.addMessage(new Message());
-        messegeList.addMessage(new Message());
-        messegeList.addMessage(new Message());
+        messegeList.addMessage(new JMessage());
+        messegeList.addMessage(new JMessage());
+        messegeList.addMessage(new JMessage());
 
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         frame.setSize(300, 300);
