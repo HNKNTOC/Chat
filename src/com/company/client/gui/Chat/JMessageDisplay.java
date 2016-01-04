@@ -1,4 +1,4 @@
-package com.company.client.gui.elementsChat;
+package com.company.client.gui.Chat;
 
 
 import javax.swing.*;
@@ -6,7 +6,7 @@ import javax.swing.*;
 /**
  * Отображает множество JMessage.
  */
-public interface MessageDisplay{
+interface JMessageDisplay {
     void addMessage(JMessage message);
     void removeMessage(JMessage message);
     JPanel getJPanel();

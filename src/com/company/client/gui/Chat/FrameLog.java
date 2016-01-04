@@ -1,4 +1,7 @@
-package com.company.client.gui;
+package com.company.client.gui.Chat;
+
+import com.company.client.observer.ObservableMessages;
+import com.company.client.observer.ObserverMessage;
 
 import javax.swing.*;
 import java.awt.*;
@@ -7,7 +10,7 @@ import java.awt.event.ActionListener;
 /**
  * Created by HNKNTOC on 19.12.2015.
  */
-public class FrameLog extends JFrame {
+class FrameLog extends JFrame{
 
     private JTextField fieldUserName = new JTextField();
     private JPasswordField fieldUserPassword = new JPasswordField();

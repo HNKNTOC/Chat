@@ -1,7 +1,5 @@
-package com.company.client.gui;
+package com.company.client.gui.Chat;
 
-import com.company.client.gui.elementsChat.JMessegeList;
-import com.company.client.gui.elementsChat.MessageDisplay;
 
 
 import javax.swing.*;
@@ -14,9 +12,9 @@ import java.awt.event.ActionListener;
  *  В panelCenter находится messageDisplay;
  *  В panelNewMessage textFieldNewMessage и buttonPrint,
  */
-public class FrameChat extends JFrame{
+class FrameChat extends JFrame{
 
-    private MessageDisplay messageDisplay;
+    private JMessageDisplay messageDisplay;
     private JTextField textFieldNewMessage = new JTextField();
     private JButton buttonPrint = new JButton("Go!");
 
@@ -24,11 +22,11 @@ public class FrameChat extends JFrame{
         this.messageDisplay = new JMessegeList();
     }
 
-    public FrameChat(MessageDisplay messageDisplaying){
+    public FrameChat(JMessageDisplay messageDisplaying){
         this.messageDisplay = messageDisplaying;
     }
 
-    public MessageDisplay getMessageDisplay() {
+    public JMessageDisplay getMessageDisplay() {
         return messageDisplay;
     }
 

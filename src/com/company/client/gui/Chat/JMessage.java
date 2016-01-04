@@ -1,4 +1,4 @@
-package com.company.client.gui.elementsChat;
+package com.company.client.gui.Chat;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,7 +8,7 @@ import java.awt.*;
  *          содержания сообщения - content
  *          дату - data
  */
-public class JMessage extends JPanel {
+class JMessage extends JPanel {
     private String nameAuthor;
     private String content;
     private String data;

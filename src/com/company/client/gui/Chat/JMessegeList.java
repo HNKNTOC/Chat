@@ -1,4 +1,4 @@
-package com.company.client.gui.elementsChat;
+package com.company.client.gui.Chat;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,7 +6,7 @@ import java.awt.*;
 /**
  * Created by HNKNTOC on 20.12.2015.
  */
-public class JMessegeList extends JPanel implements MessageDisplay {
+class JMessegeList extends JPanel implements JMessageDisplay {
 
     public JMessegeList() {
         go();
